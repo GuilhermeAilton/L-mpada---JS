@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="principal">    
+        <img src="./img/lampada-desligada.png" width="200PX" id="lamp"onmouseover="ligarlampada()" onmouseout="Desligarlampada()" ondblclick ='Quebrarlampada()'"><br>
+        <button value="1" id="ligar" onclick="ligarlampada()"> Ligar</button><br>
+        <button id="'desligar" onclick="Desligarlampada()">Desligar</button>
+    </div>  
+<script>
+    function ligarlampada () {
+       document.getElementById('lamp').src = './img/lampada-liagda.png' 
+    }
+    function Desligarlampada () {
+       document.getElementById('lamp').src = './img/lampada-desligada.png' 
+    }
+    function Quebrarlampada () {
+       document.getElementById('lamp').src = './img/lampadaquebrada.png' 
+    }
+
+
+
+</script>      
+    
+</body>
+</html>
